@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block content %}
+
+
+{% if g.user %}
+<iframe
+    allow="microphone;"
+    style="width:100vw;height:100vh"
+    src="https://console.dialogflow.com/api-client/demo/embedded/f9b90d38-e9e6-4b30-b045-f00ee0fd0ac5">
+</iframe>
+{% else %}
+
+<h5> 로그인 후 사용해주세요 </h5>
+{% endif %}
+
+{% endblock %}
